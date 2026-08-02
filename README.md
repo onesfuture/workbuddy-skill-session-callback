@@ -93,7 +93,13 @@ WorkBuddy 原生会话隔离：
 ### 方式二：ClawHub
 
 ```bash
-npx clawhub@latest install workbuddy-session-callback
+openclaw skills install @onesfuture/workbuddy-skill-session-callback
+```
+
+或使用 ClawHub CLI：
+
+```bash
+clawhub install @onesfuture/workbuddy-skill-session-callback
 ```
 
 ## 使用
@@ -149,6 +155,10 @@ workbuddy-skill-session-callback/
 └── references/
     └── api_reference.md        # ACP 协议详细参考
 ```
+
+## 反馈
+
+发现 bug 或有改进建议？请开 [GitHub Issue](https://github.com/onesfuture/workbuddy-skill-session-callback/issues)。
 
 ## 免责声明
 
