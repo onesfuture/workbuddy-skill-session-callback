@@ -156,10 +156,10 @@ workbuddy-skill-session-callback/
     └── api_reference.md        # ACP 协议详细参考
 ```
 
-## 反馈
-
-发现 bug 或有改进建议？请开 [GitHub Issue](https://github.com/onesfuture/workbuddy-skill-session-callback/issues)。
-
 ## 免责声明
 
 本技能基于公开协议（ACP）与实测经验编写，不构成对 WorkBuddy 官方能力的承诺。协议与本地数据布局可能随版本变化，使用前请验证兼容性。
+
+## 反馈
+
+发现 bug 或有改进建议？请开 [GitHub Issue](https://github.com/onesfuture/workbuddy-skill-session-callback/issues)。

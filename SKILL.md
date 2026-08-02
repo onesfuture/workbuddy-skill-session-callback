@@ -130,29 +130,6 @@ POST {endpoint}/api/v1/acp (session/prompt) # params: {sessionId, cwd, prompt, _
 - `scripts/callback.py` — 一键回调脚本（自动发现 endpoint → connect → initialize → session/load → session/prompt）
 - `references/api_reference.md` — ACP 协议详细参考（方法、参数、事件类型、队列机制）
 
-## 安装
-
-### 方式一：ClawHub（推荐）
-
-```bash
-openclaw skills install @onesfuture/workbuddy-skill-session-callback
-```
-
-或使用 ClawHub CLI：
-
-```bash
-clawhub install @onesfuture/workbuddy-skill-session-callback
-```
-
-### 方式二：手动安装
-
-1. 从 [GitHub 仓库](https://github.com/onesfuture/workbuddy-skill-session-callback) 下载
-2. 把 `SKILL.md`、`scripts/callback.py`、`references/api_reference.md` 放入你的 skills 目录
-
-## 反馈
-
-发现 bug 或有改进建议？请开 [GitHub Issue](https://github.com/onesfuture/workbuddy-skill-session-callback/issues)。
-
 ## 发布定位与兼容性声明
 
 **本 skill 基于公开协议，非逆向工程**：
@@ -168,3 +145,7 @@ clawhub install @onesfuture/workbuddy-skill-session-callback
 - 使用前建议先验证目标会话 endpoint 可连
 
 **使用边界**：本 skill 仅调用本地回环端点（127.0.0.1），不涉及云端接口、不做越权操作、不读取会话内容之外的数据。
+
+## 反馈
+
+发现 bug 或有改进建议？请开 [GitHub Issue](https://github.com/onesfuture/workbuddy-skill-session-callback/issues)。
