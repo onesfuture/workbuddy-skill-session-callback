@@ -90,17 +90,18 @@ WorkBuddy 原生会话隔离：
    - 用户级：`~/.workbuddy/skills/`
    - 项目级：`<workspace>/.workbuddy/skills/`
 
-### 方式二：ClawHub
+### 方式二：ClawHub CLI（WorkBuddy 专用）
 
 ```bash
-openclaw skills install @onesfuture/workbuddy-skill-session-callback
+clawhub install workbuddy-skill-session-callback --workdir ~/.workbuddy --dir skills
 ```
 
-或使用 ClawHub CLI：
+> ⚠️ 必须去掉 `@onesfuture/` 前缀并指定 `--workdir ~/.workbuddy --dir skills`：
+> - 若带 `@onesfuture/` 前缀，会装到 `skills/@onesfuture/workbuddy-skill-session-callback/`（嵌套子目录），WorkBuddy 可能识别不到
+> - 若不指定 `--workdir`，默认装到当前目录的 `skills/`（或 openclaw 的 `~/.openclaw/skills/`），WorkBuddy 同样读不到
+> - `~/.workbuddy` 是 WorkBuddy 用户级数据目录（Windows 上若配置了 junction，与项目目录等价）
 
-```bash
-clawhub install @onesfuture/workbuddy-skill-session-callback
-```
+> 本技能仅适用于 WorkBuddy 桌面版，openclaw 用户请使用 [cron-callback-session](https://github.com/onesfuture/cron-callback-session)。
 
 ## 使用
 
